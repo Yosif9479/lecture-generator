@@ -18,17 +18,19 @@
 <div class="size-full max-w-256 mx-auto pt-5 px-5">
     <input class="h-10 w-full rounded-full px-4 shadow-md bg-gray-50 focus:outline-1" placeholder="Search"/>
     
-    <ul class="w-full mx-auto mt-5 flex flex-col gap-4">
+    <ul id="word-list" class="w-full mx-auto mt-5 flex flex-col gap-4">
         <li class="h-15 select-none">
             <div class="word">
-                <label class="text-white text-xl">First lecture</label>
-                <div class="h-full ml-auto flex items-center gap-1">
-                    <button class="text-yellow-200 hover:text-yellow-300 duration-200 icon select-none">edit</button>
-                    <button class="text-red-400 hover:text-red-500 duration-200 icon select-none">delete</button>
+                <label>First lecture</label>
+                <div class="actions-div">
+                    <button class="edit-button">edit</button>
+                    <button class="delete-button">delete</button>
                 </div>
             </div>
         </li>
     </ul>
 </div>
+
+<script type="module" src="/src/index"></script>
 </body>
 </html>

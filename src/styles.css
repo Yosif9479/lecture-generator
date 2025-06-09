@@ -13,5 +13,18 @@
 .word {
     @apply bg-primary rounded-xl
     size-full px-4 py-4
+    text-white text-xl
     flex items-center;
+}
+
+.actions-div {
+    @apply h-full ml-auto flex items-center gap-1;
+}
+
+.edit-button {
+    @apply text-yellow-200 hover:text-yellow-300 duration-200 select-none;
+}
+
+.delete-button {
+    @apply text-red-400 hover:text-red-500 duration-200 select-none;
 }
