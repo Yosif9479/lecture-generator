@@ -4,9 +4,31 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
     <link rel="stylesheet" href="/src/styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Lection generator</title>
+    <title>Lecture generator</title>
 </head>
-<body>
+<body class="min-h-screen">
+
+<div class="w-full bg-white shadow-md px-5 py-2 sticky top-0">
+    <label class="text-2xl">Lecture generator</label>
+</div>
+
+<!-- Main Content -->
+<div class="size-full max-w-256 mx-auto pt-5 px-5">
+    <input class="h-10 w-full rounded-full px-4 shadow-md bg-gray-50 focus:outline-1" placeholder="Search"/>
+    
+    <ul class="w-full mx-auto mt-5 flex flex-col gap-4">
+        <li class="h-15 select-none">
+            <div class="word">
+                <label class="text-white text-xl">First lecture</label>
+                <div class="h-full ml-auto flex items-center gap-1">
+                    <button class="text-yellow-200 hover:text-yellow-300 duration-200 icon select-none">edit</button>
+                    <button class="text-red-400 hover:text-red-500 duration-200 icon select-none">delete</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 </body>
 </html>

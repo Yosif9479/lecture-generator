@@ -1,1 +1,17 @@
 ﻿@import 'tailwindcss';
+
+@theme {
+    --color-primary: #75c8ff;
+    --color-primary-dark: #337eb0;
+}
+
+.icon {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 32px;
+}
+
+.word {
+    @apply bg-primary rounded-xl
+    size-full px-4 py-4
+    flex items-center;
+}
