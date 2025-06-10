@@ -4,6 +4,7 @@ import * as creator from './creator';
 const elements = {
     wordList: document.getElementById('word-list'),
     searchInput: document.getElementById('search') as HTMLInputElement,
+    downloadButton: document.getElementById('download-button') as HTMLButtonElement,
 }
 
 let words: Word[] = [];
@@ -16,6 +17,20 @@ async function onLoad(): Promise<void> {
     await populateWords();
     
     elements.searchInput.addEventListener('input', populateWords)
+    elements.downloadButton.addEventListener('click', download)
+}
+
+async function download(): Promise<void> {
+    const content: string = JSON.stringify(words);
+
+    const blob = new Blob([content], { type: 'application/json' });
+    const url: string = URL.createObjectURL(blob);
+    const a: HTMLAnchorElement = document.createElement('a');
+    a.href = url;
+    a.download = 'lection.json';
+    a.click();
+
+    setTimeout(() => URL.revokeObjectURL(url), 100);
 }
 
 async function populateWords(): Promise<void> {
