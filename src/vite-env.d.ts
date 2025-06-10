@@ -8,6 +8,7 @@ type Word = {
 
 type HTMLWordElement = {
     li: HTMLLIElement;
+    label: HTMLLabelElement;
     editButton: HTMLButtonElement;
     deleteButton: HTMLButtonElement;
 }

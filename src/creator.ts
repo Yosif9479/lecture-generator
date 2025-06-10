@@ -27,6 +27,7 @@
 
     return {
         li: li,
+        label: label,
         editButton: editButton,
         deleteButton: deleteButton
     }
