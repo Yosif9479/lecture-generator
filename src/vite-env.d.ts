@@ -12,6 +12,11 @@ type HTMLWordElement = {
     deleteButton: HTMLButtonElement;
 }
 
+type HTMLTranslationElement = {
+    li: HTMLLIElement;
+    deleteButton: HTMLButtonElement;
+}
+
 type Translation = {
     key: string;
     value: string;
