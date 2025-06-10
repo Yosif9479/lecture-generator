@@ -1,0 +1,24 @@
+﻿{
+  "routes": [
+    {
+      "src": "/(.*).html",
+      "headers": { "Content-Type": "text/html" },
+      "continue": true
+    },
+    {
+      "src": "/create",
+      "dest": "/create.html",
+      "headers": { "Content-Type": "text/html" }
+    },
+    {
+      "src": "/edit",
+      "dest": "/edit.html",
+      "headers": { "Content-Type": "text/html" }
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html",
+      "status": 200
+    }
+  ]
+}

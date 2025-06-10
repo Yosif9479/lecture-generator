@@ -11,8 +11,7 @@ export default defineConfig({
                 'index.html',
                 'create.html',
                 'edit.html'
-            ],
-            output: ['/dist/index.html', '/dist/create.html', '/dist/edit.html'],
+            ]
         }
     }
 })
