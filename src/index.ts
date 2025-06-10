@@ -21,7 +21,12 @@ async function populateWords(): Promise<void> {
         const element: HTMLWordElement = creator.createWord(word);
         elements.wordList.appendChild(element.li);
         element.deleteButton.addEventListener('click', () => removeWord(word, element.li));
+        element.editButton.addEventListener('click', () => editWord(word.id))
     }
+}
+
+async function editWord(id: string): Promise<void> {
+    window.location.href = `/edit?id=${id}`;
 }
 
 async function removeWord(word: Word, li: HTMLLIElement): Promise<void> {
