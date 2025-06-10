@@ -48,7 +48,7 @@ function save(): void
         return;
     }
     
-    const words: Word[] = storage.get('words');
+    const words: Word[] = storage.get('words') ?? [];
     
     words.push(word);
     
