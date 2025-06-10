@@ -28,3 +28,7 @@
 .delete-button {
     @apply text-red-400 hover:text-red-500 duration-200 select-none;
 }
+
+.shadow-button {
+    @apply rounded-full shadow-md shadow-black/25 active:shadow-none duration-200;
+}

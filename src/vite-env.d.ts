@@ -3,7 +3,7 @@
 type Word = {
     id: string;
     termin: string;
-    translations: StringDictionary;
+    translations: Translation[];
 }
 
 type HTMLWordElement = {
@@ -12,6 +12,7 @@ type HTMLWordElement = {
     deleteButton: HTMLButtonElement;
 }
 
-type StringDictionary = {
-    [key: string]: string;
+type Translation = {
+    key: string;
+    value: string;
 }
