@@ -1,11 +1,6 @@
 ﻿{
   "routes": [
     {
-      "src": "/(.*).html",
-      "headers": { "Content-Type": "text/html" },
-      "continue": true
-    },
-    {
       "src": "/create",
       "dest": "/create.html",
       "headers": { "Content-Type": "text/html" }
