@@ -1,8 +1,18 @@
 ﻿import tailwindcss from '@tailwindcss/vite';
-import { defineConfig } from 'vite';
+import {defineConfig} from 'vite';
 
 export default defineConfig({
     plugins: [
         tailwindcss(),
-    ]
+    ],
+    build: {
+        rollupOptions: {
+            input: [
+                'index.html',
+                'create.html',
+                'edit.html'
+            ],
+            output: ['/dist/index.html', '/dist/create.html', '/dist/edit.html'],
+        }
+    }
 })
